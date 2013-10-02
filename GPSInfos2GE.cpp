@@ -51,7 +51,7 @@ void replaceAll(std::wstring& str, const std::wstring& from, const std::wstring&
 	{
 		str.replace(start_pos, from.length(), to);
 		start_pos += to.length(); // In case 'to' contains 'from', like replacing 'x' with 'yx'
-    }
+	}
 }
 
 int wmain(int argc, wchar_t* argv[])
