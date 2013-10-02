@@ -36,7 +36,7 @@ Unzip the archive to an empty directory.
   You can copy the following code, adapt the pathes to your installation directory
   and paste it in your default toolbar.
 
-```
+  ```
 TOTALCMD#BAR#DATA
 %COMMANDER_PATH%\Tools\GPSInfos2GE\GPSInfos2GE.exe
 -l %UL
@@ -46,22 +46,18 @@ GPSInfos2GE
 
 -1
 
-```
+  ```
 
- o GPSInfos2GE.exe can be used as Send To utility. Place a shortcut (CTRL+SHIFT+F5)
-   of GPSInfos2GE.exe in directory
-	- %USERPROFILE%\SendTo if you use Win2k or WinXP,
-	- %APPDATA%\Microsoft\Windows\SendTo if you use Vista, Win7 or Win8.
+* GPSInfos2GE.exe can be used as Send To utility. Place a shortcut (CTRL+SHIFT+F5)
+  of GPSInfos2GE.exe in directory
+  * %USERPROFILE%\SendTo if you use Win2k or WinXP,
+  * %APPDATA%\Microsoft\Windows\SendTo if you use Vista, Win7 or Win8.
 
-
- * Usage:
----------
+## Usage
 
 GPSInfos2GE[.exe] [<params>] [pic1 .. picN]
 
-
- * Parameters:
---------------
+## Parameters
 
  -b browser.exe - to set path to web browser application
 
