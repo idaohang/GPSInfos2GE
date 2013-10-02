@@ -46,7 +46,7 @@ GPSInfos2GE
 
 -1
 
-  ```
+```
 
 * GPSInfos2GE.exe can be used as Send To utility. Place a shortcut (CTRL+SHIFT+F5)
   of GPSInfos2GE.exe in directory
