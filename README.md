@@ -1,11 +1,8 @@
-GPSInfos 2 Google Earth 1.0.5.0
-===============================
+# GPSInfos 2 Google Earth 1.0.5.0
 
 Copyright © 2010-2013  Thomas Beutlich
 
-
- * Disclaimer:
---------------
+## Disclaimer
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -20,9 +17,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
- * Description:
----------------
+## Description
 
 GPSInfos2GE is a small command line program that extracts the GPSInfo values of the
 Exif section of a pictures from digital cameras and displays them in Google Earth
@@ -30,21 +25,18 @@ or a web browser.
 
 GPSInfos2GE uses the Exiv2 Image Metadata Library Vs. 0.23.
 
-
- * Installation:
-----------------
+## Installation
 
 Unzip the archive to an empty directory.
 
 
- * Installation Remarks:
-------------------------
+## Installation Remarks
 
- o GPSInfos2GE.exe can be used with a button in the toolbar of Total Commander.
-   You can copy the following code, adapt the pathes to your installation directory
-   and paste it in your default toolbar.
+* GPSInfos2GE.exe can be used with a button in the toolbar of Total Commander. 
+  You can copy the following code, adapt the pathes to your installation directory
+  and paste it in your default toolbar.
 
-< ----------------- Copy (Do not include this line) ------------------ >
+```
 TOTALCMD#BAR#DATA
 %COMMANDER_PATH%\Tools\GPSInfos2GE\GPSInfos2GE.exe
 -l %UL
@@ -54,8 +46,7 @@ GPSInfos2GE
 
 -1
 
-< ------------- End copy (Do not include this line) ------------------ >
-
+```
 
  o GPSInfos2GE.exe can be used as Send To utility. Place a shortcut (CTRL+SHIFT+F5)
    of GPSInfos2GE.exe in directory
