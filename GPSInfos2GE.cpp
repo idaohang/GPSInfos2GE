@@ -51,7 +51,7 @@ void replaceAll(std::wstring& str, const std::wstring& from, const std::wstring&
 	{
 		str.replace(start_pos, from.length(), to);
 		start_pos += to.length(); // In case 'to' contains 'from', like replacing 'x' with 'yx'
-	}
+    }
 }
 
 int wmain(int argc, wchar_t* argv[])
@@ -392,7 +392,7 @@ int wmain(int argc, wchar_t* argv[])
 				{
 					wGEPath = std::wstring(wProgramFiles) + std::wstring(L"\\Google\\Google Earth\\googleearth.exe");
 				}
-				free(wProgramFiles);
+				delete [] wProgramFiles;
 			}
 
 			// final check path to Google Earth
@@ -412,7 +412,7 @@ int wmain(int argc, wchar_t* argv[])
 				si.cb = sizeof(si);
 				PROCESS_INFORMATION pi;
 				SecureZeroMemory(&pi, sizeof(pi));
-				BOOL retVal = CreateProcessW(wGEPath.c_str(), const_cast<wchar_t*>(wCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi);
+				retVal = CreateProcessW(wGEPath.c_str(), const_cast<wchar_t*>(wCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi);
 			}
 		}
 
@@ -454,7 +454,7 @@ int wmain(int argc, wchar_t* argv[])
 					si.cb = sizeof(si);
 					PROCESS_INFORMATION pi;
 					SecureZeroMemory(&pi, sizeof(pi));
-					BOOL retVal = CreateProcessW(wBrowserPath.c_str(), const_cast<wchar_t*>(wCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi);
+					retVal = CreateProcessW(wBrowserPath.c_str(), const_cast<wchar_t*>(wCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi);
 				}
 			}
 		}
